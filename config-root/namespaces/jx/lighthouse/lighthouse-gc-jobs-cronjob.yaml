@@ -16,7 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
     spec:
-      backoffLimit: 10
+      backoffLimit: 6
       template:
         metadata:
           creationTimestamp: null

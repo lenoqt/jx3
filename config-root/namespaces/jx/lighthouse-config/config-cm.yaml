@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         lenoqt/jx3: true
+        lenoqt/py-jx: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         lenoqt/jx3: merge
+        lenoqt/py-jx: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - lenoqt/jx3
+        - lenoqt/py-jx
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - lenoqt/jx3
+        - lenoqt/py-jx
       target_url: http://lighthouse-jx.192.168.59.101.nip.io/merge/status
 kind: ConfigMap
 metadata:
